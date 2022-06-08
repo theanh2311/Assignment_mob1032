@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android-MOB1032/project/anhntph09707_assignment/app/src/main/res/layout/activity_add_class.xml" value="0.25" />
+        <entry key="..\:/Android-MOB1032/project/anhntph09707_assignment/app/src/main/res/layout/activity_custom_dialog_themlop.xml" value="0.25" />
+        <entry key="..\:/Android-MOB1032/project/anhntph09707_assignment/app/src/main/res/layout/activity_main.xml" value="0.18704710144927536" />
+        <entry key="..\:/Android-MOB1032/project/anhntph09707_assignment/app/src/main/res/layout/activity_student_manage.xml" value="0.5" />
+        <entry key="..\:/Android-MOB1032/project/anhntph09707_assignment/app/src/main/res/layout/activity_view_class_list.xml" value="0.25" />
+        <entry key="..\:/Android-MOB1032/project/anhntph09707_assignment/app/src/main/res/layout/activity_xemlop.xml" value="0.25" />
+        <entry key="..\:/Android-MOB1032/project/anhntph09707_assignment/app/src/main/res/layout/item_listclass.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
