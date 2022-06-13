@@ -1,18 +1,17 @@
 package com.example.anhntph09707_assignment;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.anhntph09707_assignment.dao.ClassRoomDAO;
 
@@ -20,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ViewClassListActivity extends AppCompatActivity {
-    //khai báo
+    // khai bao
 ListView listView;
 ArrayAdapter<String> arrayAdapter;
 List<String> list = new ArrayList<>();
@@ -43,11 +42,8 @@ ClassRoomDAO classRoomDAO;
         listView.setAdapter(arrayAdapter);
         //đăng kí context menu cho listview
         registerForContextMenu(listView);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                itemPosition = position; //gán giá trị biến = vị trí item khi click
-            }
+        listView.setOnItemClickListener((adapterView, view, position, l) -> {
+            itemPosition = position; //gán giá trị biến = vị trí item khi click
         });
      }
 
@@ -62,10 +58,10 @@ ClassRoomDAO classRoomDAO;
 
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
-        AdapterView.AdapterContextMenuInfo menuInfo = (AdapterView.AdapterContextMenuInfo)item.getMenuInfo();
+       // AdapterView.AdapterContextMenuInfo menuInfo = (AdapterView.AdapterContextMenuInfo)item.getMenuInfo();
 
-        switch (item.getItemId()){
-            case 0:
+        if (item.getItemId()==0){
+
                 try {
                     //lấy all chuỗi tại item mình chọn
                     textItem = (String)listView.getItemAtPosition(itemPosition);
@@ -81,7 +77,7 @@ ClassRoomDAO classRoomDAO;
                     Toast.makeText(ViewClassListActivity.this,
                             "Cannot Delete",Toast.LENGTH_LONG).show();
                 }
-                break;
+
         }
         return super.onContextItemSelected(item);
     }
